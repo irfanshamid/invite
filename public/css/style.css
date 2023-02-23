@@ -1,0 +1,354 @@
+/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+
+* {
+    box-sizing: border-box !important;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+    background-color: #f8f2e1;
+}
+
+body {
+    color: #3A3A3A;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Lora', serif; */
+    line-height: 1.80857;
+    font-weight: normal;
+    overflow-x: hidden !important;
+    background-color: #F3F4F4;
+}
+
+#load{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    background: url('../images/loader.gif');
+    background-color: #535743;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200px;
+}
+section{
+    min-height: 100vh;
+}
+.section_part{
+    min-height: 60vh;
+}
+.section_part_long{
+    min-height: 80vh;
+}
+
+/*--------------------------------------------------------------------- color pattern ---------------------------------------------------------------------*/
+
+.bg_cream {
+    background-color: #cfd6ab;
+}
+
+/*--------------------------------------------------------------------- text ---------------------------------------------------------------------*/
+.handwriter{
+    font-family: 'My Soul', cursive;
+}
+.text_grey {
+    color: #DFDFDF;
+}
+.text_light {
+    color: #FAFAFA;
+}
+.text_dark{
+    color: #3A3A3A;
+}
+.letter_ayat{
+    line-height: 17px;
+    font-size: 11px;
+    justify-content: space-between;
+    /* width: 95%; */
+    color: #f3fff6;
+}
+.table_text{
+    font-weight: 500;
+    font-size: 13px;
+}
+.quoted{
+    font-size: 16px;
+}
+
+/*--------------------------------------------------------------------- button ---------------------------------------------------------------------*/
+.btn-custom{
+    border-radius: 8px;
+    box-shadow: 0 0 10px .5px rgba(0,0,0,.2);
+    font-weight: bold;
+    padding: .5rem 1rem;
+    color: #3A3A3A;
+    height: 40px;
+}
+
+a, a:hover, a:focus{
+    color: unset;
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------------------- welcome ---------------------------------------------------------------------*/
+.master_sections{
+    height: 100vh;
+    background: url('../images/cover.jpeg') center no-repeat;
+    background-size: cover;
+}
+
+.master_sections_layer{
+    height: 100vh;
+    padding: 10vh 0;
+    background-color: #0005;
+}
+
+.master_sections .invitor{
+    margin: .2rem 0;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #646156cc;
+}
+.master_sections .invitee{
+    margin-top: 40vh;
+}
+.master_sections .dear{
+    margin-bottom: 1rem;
+}
+
+/*--------------------------------------------------------------------- navigation ---------------------------------------------------------------------*/
+.navigation {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 9999;
+}
+.navigation_bar{
+    width: 100%;
+    padding: 10px;
+    background-color: #535743;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 0px 3px .1px #535743;
+}
+.navigation_item{
+    margin: 0px 15px;
+    font-size: 18px;
+    text-align: center;
+    color: #F3F4F4;
+    text-shadow: 2px 0px 10px #3A3A3A;
+    width: 30px;
+    height: 30px;
+}
+.play{
+    height: 30px;
+    width: 30px;
+    background-color: #535743;
+    color: #fff;
+    box-shadow: 0px 0px 5px .4px #fff2;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------------------------------------------------------------------- card ---------------------------------------------------------------------*/
+.item_card {
+    border-radius:10px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.9px);
+    -webkit-backdrop-filter: blur(5.9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.modal-header {
+    background: url('../images/cover7.jpg') center no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 2px 2px #0f0f0fcc;
+    border-top-right-radius: 3px ;
+    border-top-left-radius: 3px ;
+}
+
+/*--------------------------------------------------------------------- home invite ---------------------------------------------------------------------*/
+.invite_home {
+    background: url('../images/cover1.jpg') center no-repeat;
+    background-size: cover;
+}
+.invite_home_sections_layer{
+    height: 100vh;
+    padding: 8vh 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 65%, rgba(0,0,0,0.1) 100%);
+}
+.present{
+    color: #CCC;
+    font-size: 15px;
+}
+.ayat{
+    text-align: center;
+    font-size: 17px ;
+}
+.arti{
+    text-align: center;
+    font-size:13px;
+    line-height: 15px;
+    margin: 30px 0;
+}
+.reference{
+    text-align: center;
+}
+.slide{
+    margin-top: 80px;
+    text-align: right;
+    rotate: 90deg;
+    color: #DDD;
+}
+/*--------------------------------------------------------------------- tour invite ---------------------------------------------------------------------*/
+.invite_tour {
+    background: url('../images/cover7.jpg') center no-repeat;
+    background-size: cover;
+}
+.invite_tour_sections_layer{
+    height: 60vh;
+    padding: 8vh 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 65%, rgba(0,0,0,0.3) 100%);
+}
+
+/*--------------------------------------------------------------------- about invite ---------------------------------------------------------------------*/
+.invite_bride {
+    background: url('../images/bride.jpg') center no-repeat;
+    background-size: cover;
+}
+.invite_bride_sections_layer{
+    height: 60vh;
+    padding: 6vh 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 65%, rgba(0,0,0,0.1) 100%);
+}
+.invite_groom {
+    background: url('../images/groom.jpg') center no-repeat;
+    background-size: cover;
+}
+.invite_groom_sections_layer{
+    height: 60vh;
+    padding: 4vh 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 65%, rgba(0,0,0,0.1) 100%);
+}
+
+.bride, .groom{
+    line-height: 20px;
+    color: #FCFCF0;
+}
+
+/*--------------------------------------------------------------------- event invite ---------------------------------------------------------------------*/
+.invite_event {
+    background: url('../images/cover4.jpg') center no-repeat;
+    background-size: cover;
+}
+.invite_event_sections_layer{
+    height: 80vh;
+    padding: 8vh 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 65%, rgba(0,0,0,0.8) 100%);
+}
+.titles{
+    position: relative;
+    font-size: 20px;
+    color: #CCC;
+    line-height: 28px;
+
+}
+.titles_pivot{
+    z-index: 99;
+    color: #CCC;
+    font-weight: bold;
+    font-size: 50px;
+}
+.event_part{
+    margin: 1rem 0;
+}
+
+
+/*--------------------------------------------------------------------- rsvp invite ---------------------------------------------------------------------*/
+.invite_rsvp {
+    background: url('../images/cover6.jpg') center no-repeat;
+    background-size: cover;
+}
+.invite_rsvp_sections_layer{
+    height: 60vh;
+    padding: 8vh 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.4) 65%, rgba(0,0,0,0.3) 100%);
+}
+.rsvp_form {
+    margin: 20px 0;
+}
+
+select{
+    width:100%;
+    border-radius: 5px;
+    background-color: #cccc;
+    color: #000;
+    font-weight: bold;
+    border-bottom:1px solid #3a3a3a;
+    padding: 8px 10px;
+    outline: none;
+}
+
+.photos{
+    padding: 20px;
+}
+.photos_feed{
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center;
+}
+/*--------------------------------------------------------------------- gallery invite ---------------------------------------------------------------------*/
+.invite_gallery {
+    background: url('../images/cover9.jpeg') center repeat;
+    background-size: cover;
+}
+.invite_gallery_sections_layer{
+    background: linear-gradient(180deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.6) 65%, rgba(255,255,255,0.5) 100%);
+}
+
+/*--------------------------------------------------------------------- letter invite ---------------------------------------------------------------------*/
+.invite_letter {
+    background: url('../images/cover5.jpg') center no-repeat;
+    background-size: cover;
+}
+.invite_letter_sections_layer{
+    height: 60vh;
+    padding: 8vh 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 65%, rgba(0,0,0,0.2) 100%);
+}
+
+/*--------------------------------------------------------------------- donate invite ---------------------------------------------------------------------*/
+.invite_donate {
+    background: url('../images/gallery/4.jpg') center no-repeat;
+    background-size: cover;
+}
+.invite_donate_sections_layer{
+    height: 60vh;
+    padding: 13vh 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.4) 65%, rgba(0,0,0,0.3) 100%);
+}
