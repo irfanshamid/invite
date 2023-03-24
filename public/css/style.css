@@ -46,6 +46,10 @@ body {
 section{
     min-height: 100vh;
 }
+
+.section_part_short{
+    min-height: 45vh;
+}
 .section_part{
     min-height: 60vh;
 }
@@ -105,7 +109,7 @@ a, a:hover, a:focus{
 /*--------------------------------------------------------------------- welcome ---------------------------------------------------------------------*/
 .master_sections{
     height: 100vh;
-    background: url('../images/cover.jpeg') center no-repeat;
+    background: url('../images/cover1.jpg') center no-repeat;
     background-size: cover;
 }
 
@@ -192,21 +196,21 @@ a, a:hover, a:focus{
 
 /*--------------------------------------------------------------------- home invite ---------------------------------------------------------------------*/
 .invite_home {
-    background: url('../images/cover1.jpg') center no-repeat;
+    background: url('../images/fix_cover.jpg') center no-repeat;
     background-size: cover;
 }
 .invite_home_sections_layer{
     height: 100vh;
     padding: 8vh 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 65%, rgba(0,0,0,0.1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 65%, rgba(0,0,0,0.1) 100%);
 }
 .present{
     color: #CCC;
-    font-size: 15px;
+    font-size: 22px;
 }
 .ayat{
     text-align: center;
-    font-size: 17px ;
+    font-size: 22px ;
 }
 .arti{
     text-align: center;
@@ -230,30 +234,59 @@ a, a:hover, a:focus{
 }
 .invite_tour_sections_layer{
     height: 60vh;
-    padding: 8vh 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 65%, rgba(0,0,0,0.3) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 65%, rgba(0,0,0,0.3) 100%);
+    color: #fff !important;
+}
+
+/*--------------------------------------------------------------------- tours invite ---------------------------------------------------------------------*/
+.invite_tours {
+    background: url('../images/cover7.jpg') center no-repeat;
+    background-size: cover;
+}
+.invite_tours_sections_layer{
+    /* height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; */
+    background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 65%, rgba(0,0,0,0.3) 100%);
+    color: #fff !important;
+    padding: 6vh 0;
+}
+
+.tours_item{
+    border-radius: 20px;
 }
 
 /*--------------------------------------------------------------------- about invite ---------------------------------------------------------------------*/
 .invite_bride {
     background: url('../images/bride.jpg') center no-repeat;
     background-size: cover;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 .invite_bride_sections_layer{
-    height: 60vh;
-    padding: 6vh 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 65%, rgba(0,0,0,0.1) 100%);
+    height: 50vh;
+    padding: 4vh 0;
+    background: linear-gradient(180deg, rgba(10,10,10,0.4) 0%, rgba(10,10,10,0.4) 65%, rgba(10,10,10,0.4) 100%);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 .invite_groom {
     background: url('../images/groom.jpg') center no-repeat;
     background-size: cover;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 .invite_groom_sections_layer{
-    height: 60vh;
+    height: 50vh;
     padding: 4vh 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 65%, rgba(0,0,0,0.1) 100%);
+    background: linear-gradient(180deg, rgba(10,10,10,0.4) 0%, rgba(10,10,10,0.4) 65%, rgba(10,10,10,0.4) 100%);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
-
 .bride, .groom{
     line-height: 20px;
     color: #FCFCF0;
@@ -261,13 +294,13 @@ a, a:hover, a:focus{
 
 /*--------------------------------------------------------------------- event invite ---------------------------------------------------------------------*/
 .invite_event {
-    background: url('../images/cover4.jpg') center no-repeat;
+    background: url('../images/event.jpg') center no-repeat;
     background-size: cover;
 }
 .invite_event_sections_layer{
     height: 80vh;
     padding: 8vh 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 65%, rgba(0,0,0,0.8) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5) 65%, rgba(0,0,0,0.5) 100%);
 }
 .titles{
     position: relative;
@@ -294,8 +327,10 @@ a, a:hover, a:focus{
 }
 .invite_rsvp_sections_layer{
     height: 60vh;
-    padding: 8vh 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.4) 65%, rgba(0,0,0,0.3) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 65%, rgba(0,0,0,0.5) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .rsvp_form {
     margin: 20px 0;
@@ -344,11 +379,14 @@ select{
 
 /*--------------------------------------------------------------------- donate invite ---------------------------------------------------------------------*/
 .invite_donate {
-    background: url('../images/gallery/4.jpg') center no-repeat;
+    background: url('../images/cover7.jpg') center no-repeat;
     background-size: cover;
 }
 .invite_donate_sections_layer{
-    height: 60vh;
-    padding: 13vh 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.4) 65%, rgba(0,0,0,0.3) 100%);
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(250,250,250,0.5) 0%, rgba(250,250,250,0.5) 65%, rgba(250,250,250,0.5) 100%);
+    color: #000;
 }
