@@ -6,7 +6,7 @@
             </div>
 
             <div class="arti">
-                Maha Suci Allah yang telah menciptakan manusia dengan berpasang-pasangan.
+
                 Dengan memohon Rahmat dan Ridho Allah SWT, kami bermaksud mengundang Saudara/i dalam acara pernikahan
                 Putra dan Putri kami.
             </div>
@@ -21,10 +21,10 @@
                                 Nabila Zhafirah Putri
                             </h4>
                             <div>
-                                Putri Terakhir Dari :
+                                Putri Bungsu Dari :
                             </div>
                             <span>
-                                Bpk Sutisna dan Ibu Dyah Katrini
+                                Bpk Sutisna dan Ibu Dyah Kathrini
                             </span>
                         </div>
                         <h1 class="handwriter text-left text_light mt-5 pt-5">

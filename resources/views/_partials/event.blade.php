@@ -16,13 +16,13 @@
                     <div class="event_part">
                         <div class="d-flex justfiy-content-between">
                             <div class="border-right w-50 ">
-                                <div class="text_light font-weight-bold">AKAD</div>
+                                <div class="font-weight-bold">AKAD</div>
                                 <div class="date">
                                     08.00-10.00 WIB
                                 </div>
                             </div>
                             <div class="w-50">
-                                <div class="text_light font-weight-bold">RESEPSI</div>
+                                <div class="font-weight-bold">RESEPSI</div>
                                 <div class="date">
                                     10.00-13.00 WIB
                                 </div>

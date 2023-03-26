@@ -10,7 +10,7 @@
         @include('_partials.tour')
         @include('_partials.rsvp')
         @include('_partials.gallery')
-        @include('_partials.donate')
+        {{-- @include('_partials.donate') --}}
         @include('_partials.letter')
     </div>
 @endsection
@@ -31,15 +31,15 @@
             p = !p
             if (p === false) {
                 $('.play').append(`
-      <i class="fas fa-pause"></i>
-      `)
+                    <i class="fas fa-pause"></i>
+                `)
                 audio.volume = 1;
                 audio.play();
             } else {
                 audio.pause();
                 $('.play').append(`
-      <i class="fas fa-play"></i>
-      `)
+                    <i class="fas fa-play"></i>
+                `)
             }
         }
     </script>
