@@ -22,7 +22,7 @@
             <img src="{{ asset('images/photo/9.jpg') }}" loading="lazy" alt="" class="photos_feed">
         </div>
         <div class="col-6 col-lg-6 p-2 reveal_top">
-            <img src="{{ asset('images/photo/2.jpg') }}" loading="lazy" alt="ni_invite1" class="photos_feed">
+            <img src="{{ asset('images/photo/2.jpg') }}" loading="lazy" alt="" class="photos_feed">
         </div>
 
         <div class="text_dark pt-3 handwriter col-lg-12 text-center">Nabila & Irfan</div>

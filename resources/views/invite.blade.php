@@ -18,7 +18,7 @@
             </div>
         </div>
     </div>
-    <div class="invite_sections fadeIn d-none" id="invite_section">
+    <div class="invite_sections fadeIn" id="invite_section">
         @include('_partials.navigation')
         @include('_partials.home')
         @include('_partials.tours')
@@ -42,6 +42,7 @@
 
 
         $(document).ready(function() {
+            $(".invite_sections").hide();
             window.scrollTo(0, 0);
             // const url = new URL(window.location);
             // url.hash = '';
@@ -53,10 +54,8 @@
         });
 
         function played() {
-            let pageHeight = window.innerHeight;
-            window.scrollBy(0, pageHeight);
-            $(".invite_sections").removeClass('d-none');
-            $(".master_sections").addClass('d-none');
+            $(".invite_sections").show();
+            $(".master_sections").hide();
             audios();
         }
 
@@ -79,8 +78,8 @@
 
         function pause() {
             audios();
-            $(".invite_sections").addClass('d-none');
-            $(".master_sections").removeClass('d-none');
+            $(".invite_sections").hide();
+            $(".master_sections").show();
 
             window.scrollTo(0, 0);
 
