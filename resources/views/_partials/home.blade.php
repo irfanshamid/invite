@@ -30,12 +30,4 @@
             {{-- <div class="">Dear, Bpk. Fauzan Sek.</div> --}}
         </div>
     </div>
-
-    <div class="bottom_list">
-        <div class="slide floating">
-            <i class="fas fa-chevron-right"></i>
-            <i class="fas fa-chevron-right"></i>
-            <i class="fas fa-chevron-right"></i>
-        </div>
-    </div>
 </div>

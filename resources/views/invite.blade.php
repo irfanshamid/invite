@@ -1,7 +1,24 @@
 @extends('_layouts.index')
 
 @section('content')
-    <div class="invite_sections">
+    <div class="master_sections">
+        <div class="master_sections_layer row text-center justify-content-center">
+            <div class="col-lg-12 text_grey">
+                Undangan Pernikahan
+
+                <div class="invitor handwriter text_light">
+                    Nabila <br> & <br> Irfan
+                </div>
+            </div>
+            <div class="col-lg-12 invitee text_light">
+                <div class="dear">Kepada : Fauzan</div>
+                <button class="btn btn-sm btn-custom btn-light" onclick="played()">
+                    Buka Undangan
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="invite_sections" id="invite_section">
         @include('_partials.navigation')
         @include('_partials.home')
         @include('_partials.tours')
@@ -17,16 +34,33 @@
 
 @section('script')
     <script>
+        let loc = window.location.pathname
+
         let p = true
+        let op = false
         const audio = document.querySelector("audio");
 
+
         $(document).ready(function() {
-            audio.volume = 1;
-            audio.play();
-            played();
+            window.scrollTo(0, 0);
+            // const url = new URL(window.location);
+            // url.hash = '';
+            // history.replaceState(null, document.title, url);
+            // audio.volume = 1;
+            // audio.play();
+            // played();
+            $(".navigation").hide();
+
         });
 
         function played() {
+            let pageHeight = window.innerHeight;
+            window.scrollBy(0, pageHeight);
+            $(".navigation").show();
+            audios();
+        }
+
+        function audios() {
             $('.play').html('');
             p = !p
             if (p === false) {
@@ -41,6 +75,14 @@
                     <i class="fas fa-play"></i>
                 `)
             }
+        }
+
+        function pause() {
+            $(".navigation").hide();
+            audios();
+
+            window.scrollTo(0, 0);
+
         }
     </script>
 @stop
