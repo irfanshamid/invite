@@ -4,25 +4,25 @@
             <h2 class="text_dark pt-3 pb-3 handwriter">Our Gallery</h2>
         </div>
         <div class="col-12 col-lg-4 p-2 reveal_top active">
-            <img src="{{ asset('images/photo/6.jpg') }}" loading="lazy" alt="" class="photos_feed">
+            <img src="{{ asset('images/gallery/6.jpg') }}" loading="lazy" alt="" class="photos_feed">
         </div>
         <div class="col-6 col-lg-4 p-2 reveal_top active">
-            <img src="{{ asset('images/photo/1.jpg') }}" loading="lazy" alt="" class="photos_feed">
+            <img src="{{ asset('images/gallery/1.jpg') }}" loading="lazy" alt="" class="photos_feed">
         </div>
         <div class="col-6 col-lg-4 p-2 reveal_top active">
-            <img src="{{ asset('images/photo/4.jpg') }}" loading="lazy" alt="" class="photos_feed">
+            <img src="{{ asset('images/gallery/4.jpg') }}" loading="lazy" alt="" class="photos_feed">
         </div>
         <div class="col-6 col-lg-6 p-2 reveal_top">
-            <img src="{{ asset('images/photo/5.jpg') }}" loading="lazy" alt="" class="photos_feed">
+            <img src="{{ asset('images/gallery/5.jpg') }}" loading="lazy" alt="" class="photos_feed">
         </div>
         <div class="col-6 col-lg-6 p-2 reveal_top">
-            <img src="{{ asset('images/photo/8.jpg') }}" loading="lazy" alt="" class="photos_feed">
+            <img src="{{ asset('images/gallery/8.jpg') }}" loading="lazy" alt="" class="photos_feed">
         </div>
         <div class="col-6 col-lg-6 p-2 reveal_top">
-            <img src="{{ asset('images/photo/9.jpg') }}" loading="lazy" alt="" class="photos_feed">
+            <img src="{{ asset('images/gallery/9.jpg') }}" loading="lazy" alt="" class="photos_feed">
         </div>
         <div class="col-6 col-lg-6 p-2 reveal_top">
-            <img src="{{ asset('images/photo/2.jpg') }}" loading="lazy" alt="" class="photos_feed">
+            <img src="{{ asset('images/gallery/2.jpg') }}" loading="lazy" alt="" class="photos_feed">
         </div>
 
         <div class="text_dark pt-3 handwriter col-lg-12 text-center">Nabila & Irfan</div>
