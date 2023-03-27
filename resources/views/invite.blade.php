@@ -1,7 +1,7 @@
 @extends('_layouts.index')
 
 @section('content')
-    <div class="master_sections">
+    <div class="master_sections fadeIn">
         <div class="master_sections_layer row text-center justify-content-center">
             <div class="col-lg-12 text_grey">
                 Undangan Pernikahan
@@ -18,7 +18,7 @@
             </div>
         </div>
     </div>
-    <div class="invite_sections" id="invite_section">
+    <div class="invite_sections fadeIn d-none" id="invite_section">
         @include('_partials.navigation')
         @include('_partials.home')
         @include('_partials.tours')
@@ -49,14 +49,14 @@
             // audio.volume = 1;
             // audio.play();
             // played();
-            $(".navigation").hide();
 
         });
 
         function played() {
             let pageHeight = window.innerHeight;
             window.scrollBy(0, pageHeight);
-            $(".navigation").show();
+            $(".invite_sections").removeClass('d-none');
+            $(".master_sections").addClass('d-none');
             audios();
         }
 
@@ -78,8 +78,9 @@
         }
 
         function pause() {
-            $(".navigation").hide();
             audios();
+            $(".invite_sections").addClass('d-none');
+            $(".master_sections").removeClass('d-none');
 
             window.scrollTo(0, 0);
 
