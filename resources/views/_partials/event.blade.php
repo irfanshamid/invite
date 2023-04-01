@@ -24,7 +24,7 @@
                             <div class="w-50">
                                 <div class="font-weight-bold">RESEPSI</div>
                                 <div class="date">
-                                    10.00-13.00 WIB
+                                    11.00-13.00 WIB
                                 </div>
                             </div>
                         </div>
