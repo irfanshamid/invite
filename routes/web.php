@@ -17,6 +17,11 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/inv', function () {
-    return view('invite');
-})->name('invitePage');
+Route::group(['prefix' => 'inv'], function () {
+    Route::get('/', function () {
+        return view('invite');
+    })->name('invitePage');
+    Route::get('/{slug}', function () {
+        return view('invite');
+    })->name('invitePage');
+});
