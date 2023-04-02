@@ -11,8 +11,14 @@
             </div>
         </div>
         <div class="col-lg-12 invitee text_light">
-            <div class="dear">Kepada : <br>
-                <div id="auths"></div>
+            <div class="dear">
+                Kepada <br>
+                <h6 id="auths" class="font-weight-bold"></h6>
+            </div>
+            <div class="mb-3 p-2">
+                <small>
+                    Tanpa mengurangi rasa hormat, kami mengundang anda untuk hadir di acara pernikahan kami.
+                </small>
             </div>
             <button class="btn btn-sm btn-custom btn-light floating" onclick="played()">
                 Buka Undangan
