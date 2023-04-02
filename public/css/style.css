@@ -132,7 +132,12 @@ a, a:hover, a:focus{
     line-height: 80px;
 }
 .master_sections .invitee{
-    margin-top: 100px;
+    /* margin-top: 10em; */
+}
+
+.absolute_btm{
+    position: absolute;
+    bottom: 50px;
 }
 .master_sections .dear{
     margin-bottom: 1rem;

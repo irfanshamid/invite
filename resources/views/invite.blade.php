@@ -7,10 +7,10 @@
             Undangan Pernikahan
 
             <div class="invitor handwriter text_light">
-                Nabila <br> & <br> Irfan
+                Nabila & Irfan
             </div>
         </div>
-        <div class="col-lg-12 invitee text_light">
+        <div class="col-lg-12 invitee text_light" style="margin-top: -125px;">
             <div class="dear">
                 Kepada <br>
                 <h6 id="auths" class="font-weight-bold"></h6>
@@ -20,10 +20,10 @@
                     Tanpa mengurangi rasa hormat, kami mengundang anda untuk hadir di acara pernikahan kami.
                 </small>
             </div>
-            <button class="btn btn-sm btn-custom btn-light floating" onclick="played()">
-                Buka Undangan
-            </button>
         </div>
+        <button class="btn btn-sm btn-custom btn-light floating absolute_btm" onclick="played()">
+            Buka Undangan
+        </button>
     </div>
 </div>
 <div class="invite_sections fadeIn" id="invite_section">
