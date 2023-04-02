@@ -13,7 +13,7 @@
         <div class="col-lg-12 invitee text_light" style="margin-top: -115px;">
             <div class="dear">
                 Kepada Bapak/Ibu/Saudara/i<br>
-                <h2 id="auths" class="handwriter text-warning"></h2>
+                <h2 id="auths" class="handwriter"></h2>
             </div>
             <div class="mb-3">
                 <small>
