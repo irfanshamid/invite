@@ -49,7 +49,8 @@
     const audio = document.querySelector("audio");
 
     let arr_user = [
-        {path:'trah-wonoikromo', name: 'Kel. Besar Trah Wonoikromo'},
+        {path:'trah-wiroikromo', name: 'Kel. Besar Wiro Ikromo'},
+        {path:'trah-kartosuwarno', name: 'Kel. Besar Trah Karto Suwarno'},
         {path:'upt-ntt', name: 'Kel. Besar UPT NTT'},
         {path:'ilham', name: 'Ilham'},
         {path:'wati', name: 'Kel. Wati'},
