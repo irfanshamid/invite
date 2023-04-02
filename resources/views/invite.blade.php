@@ -15,9 +15,9 @@
                 Kepada Bapak/Ibu/Saudara/i<br>
                 <h2 id="auths" class="handwriter text-warning"></h2>
             </div>
-            <div class="mb-3 px-4">
+            <div class="mb-3">
                 <small>
-                    Tanpa mengurangi rasa hormat, kami mengundang anda untuk hadir di acara pernikahan kami.
+                    Tanpa mengurangi rasa hormat, kami mengundang anda <br> untuk hadir di acara pernikahan kami.
                 </small>
             </div>
             <button class="btn btn-sm btn-custom btn-light floating" onclick="played()">
