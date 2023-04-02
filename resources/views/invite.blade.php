@@ -42,18 +42,21 @@
 
 @section('script')
 <script>
-    let loc = window.location.pathname.replace('/inv/','').replace('-',' ');
-
+    let loc = window.location.pathname.replace('/inv/','').replaceAll('-',' ');
+    let words = loc.split(" ");
+    
     let p = true
     let op = false
     const audio = document.querySelector("audio");
     
-    function capitalizeFirstLetter(string) {
-        return string.charAt(0).toUpperCase() + string.slice(1);
+    for (let i = 0; i < words.length; i++) {
+        words[i] = words[i][0].toUpperCase() + words[i].substr(1);
     }
 
+    let pr = words.join(" ");
     $('#auths').html('');
-    $('#auths').append(`${capitalizeFirstLetter(loc)}`);
+    $('#auths').append(pr);
+
 
     $(document).ready(function() {
         $(".invite_sections").hide();
