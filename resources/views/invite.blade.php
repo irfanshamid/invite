@@ -13,9 +13,9 @@
         <div class="col-lg-12 invitee text_light" style="margin-top: -115px;">
             <div class="dear">
                 Kepada Bapak/Ibu/Saudara/i<br>
-                <h6 id="auths" class="font-weight-bold"></h6>
+                <h2 id="auths" class="handwriter text-warning"></h2>
             </div>
-            <div class="mb-3 p-2">
+            <div class="mb-3 px-4">
                 <small>
                     Tanpa mengurangi rasa hormat, kami mengundang anda untuk hadir di acara pernikahan kami.
                 </small>
