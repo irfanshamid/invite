@@ -34,7 +34,7 @@ class UsersController extends Controller
 
     public function store(Request $request)
     {
-        $exist = User::wherePath($request->path)->firstOrFail();
+        $exist = User::where('path', $request->path)->first();
         if ($exist) {
             $newUser = User::find($exist['id']);
             $newUser->path = $request->path;
@@ -49,8 +49,9 @@ class UsersController extends Controller
             $newUser->save();
         }
 
+        $after_render = User::where('path', $request->path)->first();
         return response()->json([
-            'data' => $exist,
+            'data' => $after_render,
             'success' => true,
             'message' => 'Your success message',
         ]);
