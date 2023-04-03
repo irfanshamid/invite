@@ -23,8 +23,12 @@ class UsersController extends Controller
 
     public function path($path)
     {
-        $data = User::wherePath($path)->firstOrFail();
-        $rsvp_data = $data['rsvp'];
+        $data = User::where('path', $path)->first();
+        if ($data) {
+            $rsvp_data = $data->rsvp;
+        } else {
+            $rsvp_data = 1;
+        }
         return view('invite', compact('rsvp_data'));
     }
 
