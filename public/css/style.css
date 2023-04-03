@@ -457,3 +457,16 @@ select{
 #scd-adm_length label select{
     margin: 0 0.5rem;
 }
+
+input[type="radio"] {
+    appearance: none;
+    background-color: #f0f0f0;
+    width: 2em;
+    height: 2em;
+    border: 5px solid #f0f0f0;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+    background-image: linear-gradient(to left top, #67c6af, #65bda2, #63b496, #62ac8a, #60a37f, #5c9d77, #57966f, #539067, #4a8b60, #418759, #378253, #2d7d4c);
+}

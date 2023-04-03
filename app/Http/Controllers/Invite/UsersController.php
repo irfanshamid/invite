@@ -25,7 +25,7 @@ class UsersController extends Controller
     {
         $data = User::where('path', $path)->first();
         if ($data) {
-            $rsvp_data = $data->rsvp;
+            $rsvp_data = $data['rsvp'];
         } else {
             $rsvp_data = 1;
         }

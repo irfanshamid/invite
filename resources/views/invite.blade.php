@@ -90,6 +90,7 @@
                     $(form).trigger("reset");
                     toastr.success('Terimakasih untuk konfirmasinya')
                     $('#path_name_field').val(loc);
+                    $(`#radio${response.data.rsvp === 1 ? '0': '1'}`).attr("checked", true);
                 },
                 error: function(response) {
                 }
