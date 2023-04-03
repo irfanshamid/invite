@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Invite\UsersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,10 +19,9 @@ Route::get('/', function () {
 });
 
 Route::group(['prefix' => 'inv'], function () {
-    Route::get('/', function () {
-        return view('invite');
-    })->name('invitePage');
-    Route::get('/{slug}', function () {
-        return view('invite');
-    })->name('invitePage');
+    Route::get('/', [UsersController::class, 'index'])->name('invitePage');
+    Route::get('/{slug}', [UsersController::class, 'path'])->name('invitePage');
 });
+
+Route::post('/rsvp', [UsersController::class, 'store'])->name('rsvp');
+Route::get('/secureadmin', [UsersController::class, 'admin'])->name('admin');

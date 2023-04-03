@@ -446,3 +446,14 @@ select{
     background: linear-gradient(180deg, rgba(55,55,55,0.5) 0%, rgba(55,55,55,0.5) 65%, rgba(55,55,55,0.5) 100%);
     color: #fff;
 }
+
+
+#scd-adm_length label, #scd-adm_filter label{
+    display: flex;
+    margin-bottom: 0.5rem;
+    align-items: center;
+}
+
+#scd-adm_length label select{
+    margin: 0 0.5rem;
+}

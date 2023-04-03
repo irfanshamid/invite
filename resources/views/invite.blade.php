@@ -61,7 +61,42 @@
     $(document).ready(function() {
         $(".invite_sections").hide();
         window.scrollTo(0, 0);
+
+        var form = '#add-user-form';
+
+        $('#path_name_field').val(loc);
+        $('input[type=radio][name=conf]').change(function() {
+            let val = $(this).siblings().text()
+            if(val === 'Hadir'){
+                $('#rsvp_field').val(1);
+            } else {
+                $('#rsvp_field').val(0);
+            }
+        });
+
+        $(form).on('submit', function(event){
+            event.preventDefault();
+            var url = $(this).attr('data-action');
+            $.ajax({
+                url: url,
+                method: 'POST',
+                data: new FormData(this),
+                dataType: 'JSON',
+                contentType: false,
+                cache: false,
+                processData: false,
+                success:function(response)
+                {
+                    $(form).trigger("reset");
+                    toastr.success('Terimakasih untuk konfirmasinya')
+                    $('#path_name_field').val(loc);
+                },
+                error: function(response) {
+                }
+            });
+        });
     });
+
 
     function played() {
         $(".invite_sections").show();

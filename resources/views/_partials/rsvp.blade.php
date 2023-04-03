@@ -7,17 +7,22 @@
         mengisi konfirmasi kehadiran di bawah ini
       </span>
 
-      <div class="rsvp_form row justify-content-center">
-        <div class="form-inline mx-2">
-          <input type="radio" name="conf" class="mr-2" checked>
-          <label class="m-0">Ya</label>
+      <form data-action="{{ route('rsvp') }}" method="POST" enctype="multipart/form-data" id="add-user-form">
+        @csrf
+        <input type="text" name="path" id="path_name_field" class="d-none" />
+        <input type="int" name="rsvp" id="rsvp_field" value="1" class="d-none" />
+        <div class="rsvp_form row justify-content-center">
+          <div class="form-inline mx-2">
+            <input type="radio" name="conf" class="mr-2" @if($rsvp_data==1) checked @endif>
+            <label class="m-0">Hadir</label>
+          </div>
+          <div class="form-inline mx-2">
+            <input type="radio" name="conf" class="mr-2" @if($rsvp_data==0) checked @endif>
+            <label class="m-0">Tidak Hadir</label>
+          </div>
         </div>
-        <div class="form-inline mx-2">
-          <input type="radio" name="conf" class="mr-2">
-          <label class="m-0">Tidak</label>
-        </div>
-      </div>
-      <button class="btn btn-custom btn-sm w-100">Konfirmasi</button>
+        <button class="btn btn-custom btn-sm w-100">Konfirmasi</button>
+      </form>
     </div>
   </div>
 </div>

@@ -2,7 +2,8 @@
 <script src="{{ asset('/js/jquery-3.0.0.min.js') }}"></script>
 <script src="{{ asset('/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('/js/plugin.js') }}"></script>
-
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <script>
     function copy() {
 
@@ -57,4 +58,9 @@
     }
 
     window.addEventListener("scroll", show);
+
+    $(document).ready(function () {
+        $('#scd-adm').DataTable();
+    });
+
 </script>
