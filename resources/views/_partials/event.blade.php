@@ -10,7 +10,11 @@
                 <div class="event_detail">
                     <div class="event_part">
                         <h5>SABTU, 13 MEI 2023</h5>
-                        <div class="location mb-2">Pesona Square Ballroom, Depok</div>
+                        <div class="location mb-2">
+                            Ballroom Pesona Square Mall Lantai 4,
+                            <br>
+                            Jl. Ir. H. Juanda no.99, Depok
+                        </div>
                     </div>
 
                     <div class="event_part">
